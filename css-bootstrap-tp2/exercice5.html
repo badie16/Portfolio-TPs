@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5 - Transformations et Transitions</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            animation: changeColor 3s infinite;
+            padding: 10px;
+        }
+        
+        .box:hover {
+            transform: scale(1.1) rotate(10deg);
+        }
+        
+        .box:active {
+            transform: scale(1.2);
+        }
+        
+        @keyframes changeColor {
+            0% { background-color: #3498db; }
+            33% { background-color: #e74c3c; }
+            66% { background-color: #2ecc71; }
+            100% { background-color: #3498db; }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Survolez-moi et cliquez !
+    </div>
+</body>
+</html>
+

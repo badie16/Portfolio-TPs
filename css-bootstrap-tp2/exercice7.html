@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercice 7 - Animation et transition</title>
+		<style>
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+			}
+			button {
+				padding: 15px 30px;
+				font-size: 18px;
+				background-color: #3498db;
+				color: white;
+				border: none;
+				border-radius: 50px;
+				cursor: pointer;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+				transition: transform 0.3s, box-shadow 0.3s;
+				animation: blink 4s infinite;
+			}
+			button:hover {
+				transform: scale(1.1);
+			}
+			button:active {
+				animation: rotate 2s forwards;
+			}
+			@keyframes blink {
+				0% {
+					opacity: 1;
+				}
+				50% {
+					opacity: 0.5;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<button>Cliquez-moi</button>
+	</body>
+</html>

@@ -1,0 +1,265 @@
+:root {
+	--primary: #4361ee;
+	--secondary: #3a0ca3;
+	--accent: #7209b7;
+	--light: #f8f9fa;
+	--dark: #212529;
+	--success: #4cc9f0;
+	--warning: #f72585;
+	--info: #4895ef;
+	--card-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	--transition: all 0.3s ease;
+}
+
+body {
+	font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+	min-height: 100vh;
+}
+
+.navbar {
+	background: linear-gradient(90deg, var(--primary), var(--secondary));
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+	font-weight: 700;
+	color: white !important;
+}
+
+.hero {
+	background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+	color: white;
+	padding: 80px 0;
+	margin-bottom: 50px;
+	box-shadow: var(--card-shadow);
+	position: relative;
+	overflow: hidden;
+}
+
+.hero::before {
+	content: "";
+	position: absolute;
+	top: -50px;
+	right: -50px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.hero::after {
+	content: "";
+	position: absolute;
+	bottom: -80px;
+	left: -80px;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.hero h1 {
+	font-weight: 800;
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 1.2rem;
+	opacity: 0.9;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.exercise-card {
+	background: white;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: var(--card-shadow);
+	transition: var(--transition);
+	height: 100%;
+	position: relative;
+}
+
+.exercise-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+	background: linear-gradient(90deg, var(--primary), var(--secondary));
+	color: white;
+	font-weight: 600;
+	padding: 15px 20px;
+	font-size: 1.2rem;
+}
+
+.card-body {
+	padding: 20px;
+}
+
+.card-icon {
+	font-size: 2.5rem;
+	margin-bottom: 15px;
+	color: var(--primary);
+	transition: var(--transition);
+}
+
+.exercise-card:hover .card-icon {
+	transform: scale(1.2);
+}
+
+.card-description {
+	color: #6c757d;
+	margin-bottom: 20px;
+	font-size: 0.95rem;
+}
+
+.btn-view {
+	background: linear-gradient(90deg, var(--primary), var(--secondary));
+	color: white;
+	border: none;
+	border-radius: 50px;
+	padding: 8px 25px;
+	font-weight: 500;
+	transition: var(--transition);
+	width: 100%;
+}
+
+.btn-view:hover {
+	background: linear-gradient(90deg, var(--secondary), var(--primary));
+	color: white;
+	transform: scale(1.05);
+}
+
+.section-title {
+	position: relative;
+	margin-bottom: 40px;
+	font-weight: 700;
+	color: var(--dark);
+}
+
+.section-title::after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	width: 60px;
+	height: 4px;
+	background: var(--primary);
+	border-radius: 2px;
+}
+
+.badge-custom {
+	background: var(--info);
+	color: white;
+	font-weight: 500;
+	padding: 5px 10px;
+	border-radius: 50px;
+	font-size: 0.75rem;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.badge-html {
+	background: #e34c26;
+}
+
+.badge-css {
+	background: #264de4;
+}
+
+.badge-bootstrap {
+	background: #7952b3;
+}
+
+.badge-flex {
+	background: #38b2ac;
+}
+
+.badge-animation {
+	background: #ed8936;
+}
+
+.footer {
+	background: linear-gradient(90deg, var(--primary), var(--secondary));
+	color: white;
+	padding: 20px 0;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: var(--primary);
+	color: white;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	transition: var(--transition);
+	z-index: 1000;
+}
+
+.back-to-top:hover {
+	background: var(--secondary);
+	transform: translateY(-5px);
+	color: white;
+}
+
+/* Animation pour les cartes */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-card {
+	animation: fadeInUp 0.5s ease forwards;
+	opacity: 0;
+}
+
+/* Délai pour chaque carte */
+.delay-1 {
+	animation-delay: 0.1s;
+}
+.delay-2 {
+	animation-delay: 0.2s;
+}
+.delay-3 {
+	animation-delay: 0.3s;
+}
+.delay-4 {
+	animation-delay: 0.4s;
+}
+.delay-5 {
+	animation-delay: 0.5s;
+}
+.delay-6 {
+	animation-delay: 0.6s;
+}
+.delay-7 {
+	animation-delay: 0.7s;
+}
+.delay-8 {
+	animation-delay: 0.8s;
+}
+.delay-9 {
+	animation-delay: 0.9s;
+}
+.delay-10 {
+	animation-delay: 1s;
+}

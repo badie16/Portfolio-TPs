@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TP2 : CSS & Bootstrap - Index</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+		/>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container">
+				<a class="navbar-brand" href="#">TP2 : CSS & Bootstrap</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Accueil</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#exercices">Exercices</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#bonus">Bonus</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section class="hero text-center">
+			<div class="container">
+				<h1>TP2 : CSS & Bootstrap</h1>
+				<p>
+					Explorez les différents exercices de CSS et Bootstrap pour maîtriser
+					les techniques de mise en page et de design web moderne.
+				</p>
+			</div>
+		</section>
+
+		<section class="container" id="exercices">
+			<h2 class="section-title">Exercices de base</h2>
+			<div class="row g-4">
+				<!-- Exercice 1 -->
+				<div class="col-md-6 col-lg-4 animate-card delay-1">
+					<div class="exercise-card">
+						<div class="card-header">Exercice 1 : Page d'accueil</div>
+						<div class="card-body">
+							<div class="text-center">
+								<i class="bi bi-house-door card-icon"></i>
+							</div>
+							<p class="card-description">
+								Création d'une page HTML avec titre, sous-titre et paragraphe
+								stylisés avec CSS. Inclut des effets de survol et des bordures.
+							</p>
+							<div class="d-flex flex-wrap mb-3">
+								<span class="badge-custom badge-html">HTML</span>
+								<span class="badge-custom badge-css">CSS</span>
+							</div>
+							<a href="exercice1.html" class="btn btn-view">Voir l'exercice</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Exercice 2 -->
+				<div class="col-md-6 col-lg-4 animate-card delay-2">
+					<div class="exercise-card">
+						<div class="card-header">
+							Exercice 2 : Mise en page avec Flexbox
+						</div>
+						<div class="card-body">
+							<div class="text-center">
+								<i class="bi bi-layout-three-columns card-icon"></i>
+							</div>
+							<p class="card-description">
+								Utilisation de Flexbox pour aligner trois div en ligne avec des
+								styles spécifiques et un centrage vertical.
+							</p>
+							<div class="d-flex flex-wrap mb-3">
+								<span class="badge-custom badge-html">HTML</span>
+								<span class="badge-custom badge-css">CSS</span>
+								<span class="badge-custom badge-flex">Flexbox</span>
+							</div>
+							<a href="exercice2.html" class="btn btn-view">Voir l'exercice</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Exercice 3 -->
+				<div class="col-md-6 col-lg-4 animate-card delay-3">
+					<div class="exercise-card">
+						<div class="card-header">Exercice 3 : Tableau stylisé</div>
+						<div class="card-body">
+							<div class="text-center">
+								<i class="bi bi-table card-icon"></i>
+							</div>
+							<p class="card-description">
+								Création d'un tableau HTML avec des bordures, des couleurs
+								alternées et des effets au survol.
+							</p>
+							<div class="d-flex flex-wrap mb-3">
+								<span class="badge-custom badge-html">HTML</span>
+								<span class="badge-custom badge-css">CSS</span>
+							</div>
+							<a href="exercice3.html" class="btn btn-view">Voir l'exercice</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Exercice 4 -->
+				<div class="col-md-6 col-lg-4 animate-card delay-4">
+					<div class="exercise-card">
+						<div class="card-header">Exercice 4 : Formulaire stylisé</div>
+						<div class="card-body">
+							<div class="text-center">
+								<i class="bi bi-envelope card-icon"></i>
+							</div>
+							<p class="card-description">
+								Création d'un formulaire de contact avec des champs stylisés,
+								des effets de focus et des transitions.
+							</p>
+							<div class="d-flex flex-wrap mb-3">
+								<span class="badge-custom badge-html">HTML</span>
+								<span class="badge-custom badge-css">CSS</span>
+							</div>
+							<a href="exercice4.html" class="btn btn-view">Voir l'exercice</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Exercice 5 -->
+				<div class="col-md-6 col-lg-4 animate-card delay-5">
+					<div class="exercise-card">
+						<div class="card-header">
+							Exercice 5 : Transformations et Transitions
+						</div>
+						<div class="card-body">
+							<div class="text-center">
+								<i class="bi bi-magic card-icon"></i>
+							</div>
+							<p class="card-description">
+								Utilisation de transformations et transitions CSS pour créer des
+								effets interactifs sur un élément.
+							</p>
+							<div class="d-flex flex-wrap mb-3">
+								<span class="badge-custom badge-html">HTML</span>
+								<span class="badge-custom badge-css">CSS</span>
+								<span class="badge-custom badge-animation">Animation</span>
+							</div>
+							<a href="exercice5.html" class="btn btn-view">Voir l'exercice</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Exercice 6 -->
+				<div class="col-md-6 col-lg-4 animate-card delay-6">
+					<div class="exercise-card">
+						<div class="card-header">
+							Exercice 6 : Sélecteurs avancés en CSS
+						</div>
+						<div class="card-body">
+							<div class="text-center">
+								<i class="bi bi-list-ul card-icon"></i>
+							</div>
+							<p class="card-description">
+								Utilisation de sélecteurs CSS avancés comme nth-child,
+								first-child et pseudo-éléments.
+							</p>
+							<div class="d-flex flex-wrap mb-3">
+								<span class="badge-custom badge-html">HTML</span>
+								<span class="badge-custom badge-css">CSS</span>
+							</div>
+							<a href="exercice6.html" class="btn btn-view">Voir l'exercice</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Exercice 7 -->
+				<div class="col-md-6 col-lg-4 animate-card delay-7">
+					<div class="exercise-card">
+						<div class="card-header">Exercice 7 : Animation et transition</div>
+						<div class="card-body">
+							<div class="text-center">
+								<i class="bi bi-arrow-repeat card-icon"></i>
+							</div>
+							<p class="card-description">
+								Création d'un bouton avec des animations, des transitions et des
+								effets de rotation.
+							</p>
+							<div class="d-flex flex-wrap mb-3">
+								<span class="badge-custom badge-html">HTML</span>
+								<span class="badge-custom badge-css">CSS</span>
+								<span class="badge-custom badge-animation">Animation</span>
+							</div>
+							<a href="exercice7.html" class="btn btn-view">Voir l'exercice</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Exercice 8 -->
+				<div class="col-md-6 col-lg-4 animate-card delay-8">
+					<div class="exercise-card">
+						<div class="card-header">Exercice 8 : Utilisation de Bootstrap</div>
+						<div class="card-body">
+							<div class="text-center">
+								<i class="bi bi-bootstrap card-icon"></i>
+							</div>
+							<p class="card-description">
+								Création d'une page avec Bootstrap incluant navbar, grille
+								responsive, boutons, cards et carousel.
+							</p>
+							<div class="d-flex flex-wrap mb-3">
+								<span class="badge-custom badge-html">HTML</span>
+								<span class="badge-custom badge-css">CSS</span>
+								<span class="badge-custom badge-bootstrap">Bootstrap</span>
+							</div>
+							<a href="exercice8.html" class="btn btn-view">Voir l'exercice</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container mt-5" id="bonus">
+			<h2 class="section-title">Exercices Bonus</h2>
+			<div class="row g-4">
+				<div class="col-md-6 animate-card delay-9">
+					<div class="exercise-card">
+						<div class="card-header">Bonus : Reproduction de Wikipedia</div>
+						<div class="card-body">
+							<div class="text-center">
+								<i class="bi bi-wikipedia card-icon"></i>
+							</div>
+							<p class="card-description">
+								Reproduction simplifiée de la page d'accueil de Wikipedia avec
+								sa structure caractéristique.
+							</p>
+							<div class="d-flex flex-wrap mb-3">
+								<span class="badge-custom badge-html">HTML</span>
+								<span class="badge-custom badge-css">CSS</span>
+								<span class="badge-custom badge-bootstrap">Bootstrap</span>
+							</div>
+							<a href="wikipedia.html" class="btn btn-view">Voir l'exercice</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-card delay-10">
+					<div class="exercise-card">
+						<div class="card-header">Bonus : Reproduction d'Airbnb</div>
+						<div class="card-body">
+							<div class="text-center">
+								<i class="bi bi-house-heart card-icon"></i>
+							</div>
+							<p class="card-description">
+								Reproduction simplifiée de la page d'accueil d'Airbnb avec les
+								éléments clés de leur design.
+							</p>
+							<div class="d-flex flex-wrap mb-3">
+								<span class="badge-custom badge-html">HTML</span>
+								<span class="badge-custom badge-css">CSS</span>
+								<span class="badge-custom badge-bootstrap">Bootstrap</span>
+							</div>
+							<a href="airbnb.html" class="btn btn-view">Voir l'exercice</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer mt-5">
+			<div class="container">
+				<p class="mb-0">© 2025 TP2 : CSS & Bootstrap | Tous droits réservés</p>
+			</div>
+		</footer>
+
+		<a href="#" class="back-to-top text-decoration-none">
+			<i class="bi bi-arrow-up"></i>
+		</a>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const backToTopButton = document.querySelector(".back-to-top");
+
+				window.addEventListener("scroll", () => {
+					if (window.pageYOffset > 300) {
+						backToTopButton.style.display = "flex";
+					} else {
+						backToTopButton.style.display = "none";
+					}
+				});
+				backToTopButton.style.display = "none";
+			});
+		</script>
+	</body>
+</html>

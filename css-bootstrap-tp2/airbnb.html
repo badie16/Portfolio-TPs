@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Airbnb</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+		/>
+		<style>
+			:root {
+				--airbnb-red: #ff5a5f;
+				--airbnb-dark: #484848;
+				--airbnb-light: #767676;
+			}
+
+			body {
+				font-family: "Circular", -apple-system, BlinkMacSystemFont, Roboto,
+					Helvetica Neue, sans-serif;
+				color: var(--airbnb-dark);
+			}
+
+			.navbar {
+				border-bottom: 1px solid #ebebeb;
+				padding: 15px 0;
+			}
+
+			.navbar-brand {
+				color: var(--airbnb-red);
+				font-weight: bold;
+				font-size: 24px;
+			}
+
+			.search-bar {
+				border-radius: 24px;
+				box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+				border: 1px solid #ebebeb;
+				padding: 10px 20px;
+			}
+
+			.hero {
+				background-image: url("/placeholder.svg?height=600&width=1200&text=Beautiful+Destinations");
+				background-size: cover;
+				background-position: center;
+				height: 600px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: white;
+				text-align: center;
+			}
+
+			.hero-content {
+				background-color: rgba(0, 0, 0, 0.5);
+				padding: 30px;
+				border-radius: 10px;
+			}
+
+			.category-icon {
+				font-size: 24px;
+				margin-bottom: 10px;
+			}
+
+			.category-item {
+				text-align: center;
+				padding: 15px;
+				transition: transform 0.2s;
+			}
+
+			.category-item:hover {
+				transform: scale(1.05);
+			}
+
+			.listing-card {
+				border: none;
+				transition: transform 0.2s;
+				margin-bottom: 20px;
+			}
+
+			.listing-card:hover {
+				transform: translateY(-5px);
+			}
+
+			.listing-img {
+				height: 200px;
+				object-fit: cover;
+				border-radius: 10px;
+			}
+
+			.listing-price {
+				font-weight: bold;
+			}
+
+			.listing-rating {
+				color: var(--airbnb-dark);
+			}
+
+			.listing-rating i {
+				color: var(--airbnb-red);
+			}
+
+			.btn-airbnb {
+				background-color: var(--airbnb-red);
+				color: white;
+				border-radius: 8px;
+				padding: 10px 20px;
+				font-weight: bold;
+				border: none;
+			}
+
+			.btn-airbnb:hover {
+				background-color: #e74e4b;
+				color: white;
+			}
+
+			footer {
+				background-color: #f7f7f7;
+				padding: 40px 0;
+				margin-top: 40px;
+				border-top: 1px solid #ebebeb;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white">
+			<div class="container">
+				<a class="navbar-brand" href="#">airbnb</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<div class="mx-auto">
+						<form class="d-flex">
+							<input
+								class="form-control search-bar me-2"
+								type="search"
+								placeholder="Où allez-vous ?"
+								aria-label="Search"
+							/>
+						</form>
+					</div>
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Devenez hôte</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Aide</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Inscription</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Connexion</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="hero-content">
+				<h1 class="display-4 mb-4">Trouvez des logements sur Airbnb</h1>
+				<p class="lead mb-4">
+					Découvrez des logements entiers et des chambres privées, parfaits pour
+					tous les voyages.
+				</p>
+				<button class="btn btn-airbnb">Explorer</button>
+			</div>
+		</section>
+
+		<!-- Categories Section -->
+		<section class="container mt-5">
+			<h2 class="mb-4">Explorer Airbnb</h2>
+			<div class="row">
+				<div class="col-6 col-md-3">
+					<div class="category-item">
+						<div class="category-icon"><i class="bi bi-house"></i></div>
+						<h5>Logements</h5>
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<div class="category-item">
+						<div class="category-icon">
+							<i class="bi bi-calendar-event"></i>
+						</div>
+						<h5>Expériences</h5>
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<div class="category-item">
+						<div class="category-icon"><i class="bi bi-compass"></i></div>
+						<h5>Aventures</h5>
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<div class="category-item">
+						<div class="category-icon"><i class="bi bi-shop"></i></div>
+						<h5>Restaurants</h5>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Listings Section -->
+		<section class="container mt-5">
+			<div class="d-flex justify-content-between align-items-center mb-4">
+				<h2>Logements à la une</h2>
+				<a href="#" class="text-decoration-none">Voir plus</a>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="listing-card">
+						<img
+							src="https://placehold.co/200x300?text=Appartement+Paris"
+							class="listing-img w-100"
+							alt="Appartement à Paris"
+						/>
+						<div class="mt-2">
+							<div class="d-flex justify-content-between">
+								<span class="text-muted">Paris, France</span>
+								<span class="listing-rating"
+									><i class="bi bi-star-fill"></i> 4.95</span
+								>
+							</div>
+							<h5 class="mt-1">Appartement avec vue sur la Tour Eiffel</h5>
+							<p class="listing-price">120 € / nuit</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="listing-card">
+						<img
+							src="https://placehold.co/200x300?text=Villa+Bali"
+							class="listing-img w-100"
+							alt="Villa à Bali"
+						/>
+						<div class="mt-2">
+							<div class="d-flex justify-content-between">
+								<span class="text-muted">Bali, Indonésie</span>
+								<span class="listing-rating"
+									><i class="bi bi-star-fill"></i> 4.98</span
+								>
+							</div>
+							<h5 class="mt-1">Villa de luxe avec piscine privée</h5>
+							<p class="listing-price">200 € / nuit</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="listing-card">
+						<img
+							src="https://placehold.co/200x300?text=Chalet+Alpes"
+							class="listing-img w-100"
+							alt="Chalet dans les Alpes"
+						/>
+						<div class="mt-2">
+							<div class="d-flex justify-content-between">
+								<span class="text-muted">Chamonix, France</span>
+								<span class="listing-rating"
+									><i class="bi bi-star-fill"></i> 4.92</span
+								>
+							</div>
+							<h5 class="mt-1">Chalet confortable au pied des pistes</h5>
+							<p class="listing-price">150 € / nuit</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 mb-4">
+						<h5>Airbnb</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a href="#" class="text-decoration-none text-muted"
+									>Carrières</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none text-muted"
+									>Actualités</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none text-muted">Règles</a>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none text-muted"
+									>Accessibilité</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 mb-4">
+						<h5>Découvrir</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a href="#" class="text-decoration-none text-muted"
+									>Confiance et sécurité</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none text-muted"
+									>Crédit voyage</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none text-muted"
+									>Airbnb Citizen</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none text-muted"
+									>Voyager en entreprise</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 mb-4">
+						<h5>Hébergement</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a href="#" class="text-decoration-none text-muted"
+									>Pourquoi héberger</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none text-muted"
+									>Hospitalité</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none text-muted"
+									>Hébergement responsable</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none text-muted"
+									>Centre de ressources</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 mb-4">
+						<h5>Assistance</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a href="#" class="text-decoration-none text-muted"
+									>Centre d'aide</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none text-muted"
+									>Services de voisinage</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<hr />
+				<div class="d-flex justify-content-between">
+					<p>© 2025 Airbnb, Inc. Tous droits réservés</p>
+					<div>
+						<a href="#" class="me-3 text-decoration-none text-muted"
+							><i class="bi bi-facebook"></i
+						></a>
+						<a href="#" class="me-3 text-decoration-none text-muted"
+							><i class="bi bi-twitter"></i
+						></a>
+						<a href="#" class="me-3 text-decoration-none text-muted"
+							><i class="bi bi-instagram"></i
+						></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TechVision - IA Solutions</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+		<style>
+			.back-to-home {
+				position: fixed;
+				top: 20px;
+				right: 20px;
+				background: #4361ee;
+				color: white;
+				padding: 10px 15px;
+				border-radius: 50px;
+				text-decoration: none;
+				display: flex;
+				align-items: center;
+				gap: 8px;
+				font-weight: 500;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+				z-index: 1000;
+				transition: all 0.3s ease;
+			}
+
+			.back-to-home:hover {
+				background: #3a0ca3;
+				transform: translateY(-3px);
+			}
+		</style>
+	</head>
+	<body>
+		<a href="../index.html" class="back-to-home">
+			<i class="fas fa-home"></i> Accueil
+		</a>
+
+		<header class="hero" id="accueil">
+			<nav>
+				<div class="logo">TechVision</div>
+				<ul>
+					<li><a href="#accueil">Accueil</a></li>
+					<li><a href="#projects">Services</a></li>
+					<li><a href="#experts">Experts</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="hero-content">
+				<h1>TechVision</h1>
+				<h2>Façonnons l'avenir avec l'Intelligence Artificielle</h2>
+
+				<div class="intro">
+					<p>
+						Notre <strong>mission</strong> est de transformer le monde grâce à
+						l'<strong>intelligence artificielle</strong> en créant des solutions
+						<strong>innovantes</strong> qui redéfinissent les possibilités.
+					</p>
+				</div>
+
+				<div class="services-list">
+					<ol>
+						<li>
+							<i class="fas fa-brain"></i>
+							Intelligence Artificielle Avancée
+						</li>
+						<li>
+							<i class="fas fa-brain"></i>
+							Machine Learning & Deep Learning
+						</li>
+						<li>
+							<i class="fas fa-robot"></i>
+							Automatisation Intelligente
+						</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="hero-image">
+				<img
+					src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+					alt="IA Visualization"
+				/>
+			</div>
+		</header>
+
+		<section class="projects" id="projects">
+			<h2>Projets Innovants</h2>
+
+			<div class="project-cards">
+				<a href="#ia" class="project-card">
+					<img
+						src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+						alt="IA Project"
+					/>
+					<h3>IA Prédictive</h3>
+					<p>Solutions d'analyse avancée</p>
+				</a>
+				<a href="#robotique" class="project-card">
+					<img
+						src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+						alt="Robotics"
+					/>
+					<h3>Robotique</h3>
+					<p>Automatisation intelligente</p>
+				</a>
+				<a href="#cyber" class="project-card">
+					<img
+						src="https://images.unsplash.com/photo-1563986768609-322da13575f3"
+						alt="Cybersecurity"
+					/>
+					<h3>Cybersécurité</h3>
+					<p>Protection IA</p>
+				</a>
+			</div>
+
+			<div class="video-section">
+				<video
+					controls
+					poster="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+				>
+					<source src="demo.mp4" type="video/mp4" />
+					Votre navigateur ne supporte pas la lecture de vidéos.
+				</video>
+				<p>
+					Découvrez notre <strong>technologie révolutionnaire</strong> en action
+				</p>
+			</div>
+		</section>
+
+		<section class="experts" id="experts">
+			<h2>Nos Experts</h2>
+			<div class="experts-table">
+				<table>
+					<thead>
+						<tr>
+							<th>Photo</th>
+							<th>Nom</th>
+							<th>Spécialité</th>
+							<th>Expérience</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<img
+									src="https://lh3.googleusercontent.com/a/ACg8ocKuCYP6786SQkCS6qkbVPd1j9hc2VpjG6OXENLoA1JB6BwZFqHM=s40-c"
+									alt="Dr. Badie"
+								/>
+							</td>
+							<td>Dr. badie bahida</td>
+							<td>Intelligence <strong>Artificielle</strong></td>
+							<td>12 ans</td>
+						</tr>
+						<tr>
+							<td>
+								<img
+									src="https://lh3.googleusercontent.com/a-/ALV-UjXqrfnSzYMHXGqWyb1HqT8aXkZDKKXs7ezyEQ8MFGYznrhXm2MakQ=s32-c"
+									alt="Prof. Baqach"
+								/>
+							</td>
+							<td>Adil Baqach</td>
+							<td><strong>Deep Learning</strong></td>
+							<td>8 ans</td>
+						</tr>
+						<tr>
+							<td>
+								<img
+									src="https://lh3.googleusercontent.com/a-/ALV-UjVJBoFfzQR6RJxWinC5SZzGc410JaU4TNjDfI4f1ySGCa_iAYg=s40-c"
+									alt="prof. SADIQ"
+								/>
+							</td>
+							<td>prof. Abderrahmane SADIQ</td>
+							<td><strong>Robotique</strong> Cognitive</td>
+							<td>15 ans</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class="contact" id="contact">
+			<div class="contact-container">
+				<div class="contact-info">
+					<h2>Contactez-nous</h2>
+					<p>Transformons ensemble vos idées en réalité</p>
+
+					<div class="contact-details">
+						<div class="contact-item">
+							<i class="fas fa-map-marker-alt"></i>
+							<p>techvision, Taroudant</p>
+						</div>
+						<div class="contact-item">
+							<i class="fas fa-phone"></i>
+							<p>06 23 45 67 89</p>
+						</div>
+						<div class="contact-item">
+							<i class="fas fa-envelope"></i>
+							<p>contact@techvision.fr</p>
+						</div>
+					</div>
+					<div class="map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.2471691455244!2d-8.863868075268677!3d30.493312274700646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb173001472dcc1%3A0x3f2507f09223083!2sEcole%20Nationale%20Sup%C3%A9rieure%20de%20l&#39;Intelligence%20Artificielle%20et%20Sciences%20des%20Donn%C3%A9es!5e1!3m2!1sar!2sma!4v1740057934180!5m2!1sar!2sma"
+							width="600"
+							height="450"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+				</div>
+
+				<form class="contact-form">
+					<div class="form-group">
+						<label for="name">Nom</label>
+						<input type="text" id="name" name="name" required />
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" required />
+					</div>
+
+					<div class="form-group">
+						<label for="subject">Objet</label>
+						<input type="text" id="subject" name="subject" required />
+					</div>
+
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required></textarea>
+					</div>
+
+					<div class="form-group checkbox">
+						<input type="checkbox" id="terms" name="terms" required />
+						<label for="terms">J'accepte les conditions d'utilisation</label>
+					</div>
+
+					<button type="submit">
+						Envoyer <i class="fas fa-paper-plane"></i>
+					</button>
+				</form>
+			</div>
+		</section>
+	</body>
+</html>
