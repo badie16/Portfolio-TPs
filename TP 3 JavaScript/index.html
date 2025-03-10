@@ -4,11 +4,21 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>TP3 JavaScript</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../global.css" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
+		<a href="../index.html" class="back-button">
+			<i class="fa fa-arrow-left"></i> Retour
+		</a>
 		<header>
 			<h1>TP3 JavaScript</h1>
 			<button id="darkModeToggle">
@@ -19,14 +29,19 @@
 		<main>
 			<!-- Exercice 1: Manipulation des tableaux -->
 			<section id="exercice1" class="exercice-section">
-				<h2><i class="fas fa-layer-group"></i> Exercice 1: Manipulation des tableaux</h2>
+				<h2>
+					<i class="fas fa-layer-group"></i> Exercice 1: Manipulation des
+					tableaux
+				</h2>
 				<div class="input-group">
 					<input type="text" id="arrayInput" placeholder="Entrez une valeur" />
 					<button id="addToArray"><i class="fas fa-plus"></i> Ajouter</button>
 				</div>
 				<div class="button-group">
 					<button id="sortArray"><i class="fas fa-sort"></i> Trier</button>
-					<button id="removeLastElement"><i class="fas fa-trash-alt"></i> Supprimer le dernier</button>
+					<button id="removeLastElement">
+						<i class="fas fa-trash-alt"></i> Supprimer le dernier
+					</button>
 				</div>
 				<div class="result">
 					<h3><i class="fas fa-list"></i> Éléments du tableau:</h3>
@@ -42,7 +57,9 @@
 						<input type="text" id="personName" placeholder="Nom" required />
 						<input type="number" id="personAge" placeholder="Âge" required />
 						<input type="text" id="personCity" placeholder="Ville" required />
-						<button type="submit"><i class="fas fa-user-plus"></i> Ajouter une personne</button>
+						<button type="submit">
+							<i class="fas fa-user-plus"></i> Ajouter une personne
+						</button>
 					</div>
 				</form>
 				<div class="result">
@@ -52,16 +69,23 @@
 			</section>
 			<!-- Exercice 3: Fonctions et Calculs -->
 			<section id="exercice3" class="exercice-section">
-				<h2><i class="fas fa-calculator"></i> Exercice 3: Fonctions et Calculs</h2>
+				<h2>
+					<i class="fas fa-calculator"></i> Exercice 3: Fonctions et Calculs
+				</h2>
 				<div class="calc-section">
-					<h3><i class="fas fa-square-root-alt"></i> Calcul du carré et racine carrée</h3>
+					<h3>
+						<i class="fas fa-square-root-alt"></i> Calcul du carré et racine
+						carrée
+					</h3>
 					<div class="input-group">
 						<input
 							type="number"
 							id="numberInput"
 							placeholder="Entrez un nombre"
 						/>
-						<button id="calculate"><i class="fas fa-equals"></i> Calculer</button>
+						<button id="calculate">
+							<i class="fas fa-equals"></i> Calculer
+						</button>
 					</div>
 					<div id="calcResult" class="result"></div>
 				</div>
@@ -71,20 +95,26 @@
 					<div class="input-group">
 						<input type="number" id="number1" placeholder="Premier nombre" />
 						<input type="number" id="number2" placeholder="Deuxième nombre" />
-						<button id="calculateSum"><i class="fas fa-equals"></i> Calculer la somme</button>
+						<button id="calculateSum">
+							<i class="fas fa-equals"></i> Calculer la somme
+						</button>
 					</div>
 					<div id="sumResult" class="result"></div>
 				</div>
 
 				<div class="calc-section">
-					<h3><i class="fas fa-check-circle"></i> Vérification nombre premier</h3>
+					<h3>
+						<i class="fas fa-check-circle"></i> Vérification nombre premier
+					</h3>
 					<div class="input-group">
 						<input
 							type="number"
 							id="primeInput"
 							placeholder="Entrez un nombre"
 						/>
-						<button id="checkPrime"><i class="fas fa-search"></i> Vérifier</button>
+						<button id="checkPrime">
+							<i class="fas fa-search"></i> Vérifier
+						</button>
 					</div>
 					<div id="primeResult" class="result"></div>
 				</div>
@@ -99,18 +129,25 @@
 						<span id="counterValue" class="counter">0</span>
 						<button id="incrementBtn"><i class="fas fa-plus"></i></button>
 					</div>
-					<button id="resetBtn"><i class="fas fa-redo"></i> Réinitialiser</button>
+					<button id="resetBtn">
+						<i class="fas fa-redo"></i> Réinitialiser
+					</button>
 				</div>
 			</section>
 			<!-- Exercice 5: Gestion des événements -->
 			<section id="exercice5" class="exercice-section">
-				<h2><i class="fas fa-mouse-pointer"></i> Exercice 5: Gestion des événements</h2>
+				<h2>
+					<i class="fas fa-mouse-pointer"></i> Exercice 5: Gestion des
+					événements
+				</h2>
 				<div class="input-group">
 					<input type="text" id="itemInput" placeholder="Nouvel élément" />
 					<button id="addItem"><i class="fas fa-plus"></i> Ajouter</button>
 				</div>
 				<div class="controls">
-					<button id="toggleList"><i class="fas fa-eye-slash"></i> Cacher/Afficher la liste</button>
+					<button id="toggleList">
+						<i class="fas fa-eye-slash"></i> Cacher/Afficher la liste
+					</button>
 					<input
 						type="text"
 						id="filterInput"
@@ -129,7 +166,9 @@
 					<button id="addTodo"><i class="fas fa-plus"></i> Ajouter</button>
 				</div>
 				<div class="controls">
-					<button id="clearCompleted"><i class="fas fa-broom"></i> Supprimer les tâches terminées</button>
+					<button id="clearCompleted">
+						<i class="fas fa-broom"></i> Supprimer les tâches terminées
+					</button>
 				</div>
 				<ul id="todoList"></ul>
 			</section>
@@ -142,4 +181,3 @@
 		<script src="main.js"></script>
 	</body>
 </html>
-

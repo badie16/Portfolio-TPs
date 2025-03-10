@@ -1,62 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice 4 - Formulaire stylisé</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        
-        input:focus, textarea:focus {
-            outline: none;
-            border-color: #1E90FF;
-            box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
-        }
-        
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: transform 0.3s;
-        }
-        
-        button:hover {
-            transform: scale(1.05);
-        }
-    </style>
-</head>
-<body>
-    <h2>Contactez-nous</h2>
-    <form>
-        <input type="text" placeholder="Votre nom" required>
-        <input type="email" placeholder="Votre email" required>
-        <input type="text" placeholder="Objet" required>
-        <textarea rows="5" placeholder="Votre message" required></textarea>
-        <button type="submit">Envoyer</button>
-    </form>
-</body>
-</html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercice 4 - Formulaire stylisé</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="../global.css" />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				max-width: 600px;
+				margin: 0 auto;
+				padding: 20px;
+			}
 
+			form {
+				display: flex;
+				flex-direction: column;
+			}
+
+			input,
+			textarea {
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 15px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				box-sizing: border-box;
+			}
+
+			input:focus,
+			textarea:focus {
+				outline: none;
+				border-color: #1e90ff;
+				box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+			}
+
+			button {
+				background-color: #4caf50;
+				color: white;
+				padding: 12px 20px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				font-size: 16px;
+				transition: transform 0.3s;
+			}
+
+			button:hover {
+				transform: scale(1.05);
+			}
+		</style>
+	</head>
+	<body>
+		<a href="index.html" class="back-button">
+			<i class="fa fa-arrow-left"></i> Retour
+		</a>
+		<h2>Contactez-nous</h2>
+		<form>
+			<input type="text" placeholder="Votre nom" required />
+			<input type="email" placeholder="Votre email" required />
+			<input type="text" placeholder="Objet" required />
+			<textarea rows="5" placeholder="Votre message" required></textarea>
+			<button type="submit">Envoyer</button>
+		</form>
+	</body>
+</html>
